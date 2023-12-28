@@ -1,30 +1,66 @@
 //Navbar .scss settings file
 
 header {
-    border: 1px solid $secondaryCol; //Debugger
-
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 30px;
 
     .logo-div {
-        border: 1px solid $secondaryCol; //Debugger
-        padding: 0;
+        padding: 12px  0 12px 0;
+        & .logo {
+            width: 80px;
+        }
     }
 
-    .logo {
-        width: 80px;
-    }
-
-    ul, li, a {
-        list-style: none;
-        text-decoration: none;
-        color: #000;
-
-        font-family: $bodyFont;
-        font-weight: 400;
+    ul {
         display: flex;
         gap: 2.5rem;
+    }
+
+    li {
+        font-family: $bodyFont;
+        font-weight: 500;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: $primaryCol;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none; // default hamburger menu to hidden
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        margin: 10px;
+    }
+    
+    .bar {
+        width: 100%;
+        height: 2px;
+        background-color: $primaryCol;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    div.toggle-btn {
+        display: flex;
     }
 }

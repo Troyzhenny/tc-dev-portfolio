@@ -1,17 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "./variables";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
-    h2 {
-        font-family: 'league-spartan', sans-serif;
-        font-size: 1.6em;
-        font-weight: 900;
-    }
-}
+@import "./globals";
+@import "./navbar";
 

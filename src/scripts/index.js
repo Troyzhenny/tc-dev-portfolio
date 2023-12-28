@@ -1,8 +1,6 @@
-function handleOpenMenu() {
+function toggleMenu() {
     //Do Something
 }
 
 
-function handleCloseMenu() {
-    //Do Something
-}
+console.log("Hello World!")
