@@ -1,0 +1,30 @@
+//Navbar .scss settings file
+
+header {
+    border: 1px solid $secondaryCol; //Debugger
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+
+    .logo-div {
+        border: 1px solid $secondaryCol; //Debugger
+        padding: 0;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    ul, li, a {
+        list-style: none;
+        text-decoration: none;
+        color: #000;
+
+        font-family: $bodyFont;
+        font-weight: 400;
+        display: flex;
+        gap: 2.5rem;
+    }
+}
