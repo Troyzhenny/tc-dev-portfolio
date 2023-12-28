@@ -1,0 +1,19 @@
+//CTA Button >> Projects
+@mixin primaryButton () {
+    width: 120px;
+    min-height: 45px;
+    outline: transparent;
+    border: none;
+    background-color: $primaryCol;
+    color: #fff;
+    font-size: 1em;
+    font-family: $headingFont;
+    font-weight: 400;
+
+    &:hover {
+        background-color: $secondaryCol;
+        cursor: pointer;
+        transition: .5s;
+        color: $primaryCol;
+    }
+}
