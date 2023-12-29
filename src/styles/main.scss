@@ -1,54 +1,61 @@
+// Importing partials
 @import "./variables";
 @import "./globals";
 @import "./navbar";
 @import "./buttons";
 
+// Main container styling
 main {
     width: 100%;
-    height: 100%;
-    // justify-content: center;
-    align-items: left;
-    // display: flex;
-    // flex-direction: column;
+    min-height: 100%; // Set a minimum height to ensure content is centered vertically
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 
-    //Debugger
-    border: 5px solid #ff0000;
 
+    // Hero text container styling
     .hero-txt-cont {
-        width: 600px;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%; // Set a reasonable width for larger screens
+        max-width: 600px; // Set a maximum width for larger screens to prevent stretching
+
+
+        // Header 1 styling
+        h1 {
+            font-family: $headingFont;
+            font-weight: 900;
+            font-size: 6em;
+            color: $primaryCol;
+            margin: 0;
+        }
+
+        // Header 4 styling
+        h4 {
+            font-family: $bodyFont;
+            font-weight: 500;
+            font-size: 1.3em;
+            color: $primaryCol;
+            text-align: justify;
+            padding: 20px;
+            margin: 0;
+        }
     }
 
-    h1 {
-        font-family: $headingFont;
-        font-weight: 900;
-        font-size: 6em;
-        margin: 0;
-
-        //Debugger
-        border: 1px solid blue;
-    }
-
-    h4 {
-        width: 567px;
-        margin: 0;
-        font-size: 1em;
-        font-weight: 400;
-
-        //Debugger
-        border: 1px solid blue;
-    }
-
+    // Button styling
     button {
-        @include primaryButton()
+        @include primaryButton();
+        margin: 50px 0 0 0;
     }
 }
 
-
-
+// Responsive styling for screens with a maximum width of 583px
 @media (max-width: 583px) {
-    main h1 {
-        font-size: 4.2em;
+    main .hero-txt-cont h1 {
+        font-size: 3.5em;
+    }
+
+    main .hero-txt-cont h4 {
+        font-size: 1em;
     }
 }

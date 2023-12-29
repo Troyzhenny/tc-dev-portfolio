@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, html {
   width: 100%;
   height: 100%;
@@ -13,10 +17,12 @@ body, html {
 }
 
 header {
+  height: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 30px;
+  background-color: #fff;
   position: sticky;
   top: 0;
 }
@@ -33,6 +39,7 @@ header ul {
 header li {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 500;
+  font-size: 1em;
 }
 header li:hover {
   text-decoration: underline;
@@ -42,79 +49,61 @@ header a {
   text-decoration: none;
   color: #151616;
 }
-header .toggle-btn {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  margin: 10px;
-}
-header .toggle-btn:hover {
-  cursor: pointer;
-}
-header .bar {
-  width: 100%;
-  height: 2px;
-  background-color: #151616;
-}
 
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
-  div.toggle-btn {
-    display: flex;
-  }
-}
 main {
   width: 100%;
-  height: 100%;
-  align-items: left;
-  border: 5px solid #ff0000;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 main .hero-txt-cont {
-  width: 600px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
 }
-main h1 {
+main .hero-txt-cont h1 {
   font-family: "General Sans", sans-serif;
   font-weight: 900;
   font-size: 6em;
+  color: #151616;
   margin: 0;
-  border: 1px solid blue;
 }
-main h4 {
-  width: 567px;
+main .hero-txt-cont h4 {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #151616;
+  text-align: justify;
+  padding: 20px;
   margin: 0;
-  font-size: 1em;
-  font-weight: 400;
-  border: 1px solid blue;
 }
 main button {
-  width: 120px;
+  width: 140px;
   min-height: 45px;
   outline: transparent;
   border: none;
+  border-radius: 100px;
   background-color: #151616;
-  color: #fff;
-  font-size: 1em;
+  color: #ffe1bf;
+  font-size: 1.1em;
   font-family: "General Sans", sans-serif;
   font-weight: 400;
+  margin: 50px 0 0 0;
 }
 main button:hover {
-  background-color: #dbb67f;
+  background-color: #606c38;
   cursor: pointer;
   transition: 0.5s;
-  color: #151616;
+  color: #fff;
 }
 
 @media (max-width: 583px) {
-  main h1 {
-    font-size: 4.2em;
+  main .hero-txt-cont h1 {
+    font-size: 3.5em;
+  }
+  main .hero-txt-cont h4 {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=main.css.map */
