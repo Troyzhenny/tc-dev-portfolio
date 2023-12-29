@@ -6,12 +6,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 5px solid blue;
 
     .bio--cont {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        gap: 40px;
     }
 
+    // About me page Heading
     h2 {
         font-family: $headingFont;
         font-size: 6em;
@@ -20,6 +24,7 @@
         margin: 0; // Remove default margin for h2
     }
 
+    // Bio Image Container
     .bio--img--cont {
         display: flex;
         width: 50%; // Adjust width as needed
@@ -30,26 +35,44 @@
         }
     }
 
+    // Bio Text Container
     .bio--text--cont {
         display: flex;
         flex-direction: column;
         width: 50%; // Adjust width as needed
 
-        // Add some spacing between h2 and the text
-        margin-left: 20px; // Adjust margin as needed
+        //Bio Heading -- Who am I?
+        h3 {
+            font-family: $headingFont;
+            font-size: 2em;
+            font-weight: 700;
+            margin: 20px 0 0 0;
+            color: $primaryCol;
+        }
 
-        // Debugger
-        border: 1px solid $secondaryCol;
+        // Bio article -- 
+        h4 {
+            font-weight: 500;
+            font-size: 1.1em;
+            text-align: justify;
+
+            width: 100%;
+        }
     }
 
     @media (max-width: 768px) {
         .bio--img--cont,
         .bio--text--cont {
             width: 100%; // Stack on smaller screens
+            max-width: 440px;
         }
 
-        .bio--img--cont {
-            order: -1; // Move the image above the text
+        .bio--cont {
+            flex-wrap: wrap;
+        }
+
+        section .about--me, h2 {
+            font-size: 4em;
         }
     }
 }

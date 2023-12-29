@@ -58,10 +58,13 @@ header a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 5px solid blue;
 }
 .about--me .bio--cont {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 40px;
 }
 .about--me h2 {
   font-family: "General Sans", sans-serif;
@@ -82,16 +85,31 @@ header a {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-left: 20px;
-  border: 1px solid #606c38;
+}
+.about--me .bio--text--cont h3 {
+  font-family: "General Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 20px 0 0 0;
+  color: #151616;
+}
+.about--me .bio--text--cont h4 {
+  font-weight: 500;
+  font-size: 1.1em;
+  text-align: justify;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .about--me .bio--img--cont,
   .about--me .bio--text--cont {
     width: 100%;
+    max-width: 440px;
   }
-  .about--me .bio--img--cont {
-    order: -1;
+  .about--me .bio--cont {
+    flex-wrap: wrap;
+  }
+  .about--me section .about--me, .about--me h2 {
+    font-size: 4em;
   }
 }
 
