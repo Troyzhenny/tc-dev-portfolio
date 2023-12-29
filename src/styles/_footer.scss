@@ -1,0 +1,55 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid blue;
+
+    .copyright--cont {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        border: 1px solid blue;
+
+        //Copyright h3 © 2023 TC
+        h3 {
+            font-weight: 500;
+        }
+        //Copyright h3 > span © 2023 TC
+        h3 > span {
+            font-family: $headingFont;
+            font-weight: 800;
+        }
+        //site built with --
+        h4 {
+            font-weight: 500;
+        }
+
+        // Scroll back to top button --
+        a {
+            text-decoration: none;
+            color: $primaryCol;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            
+            i {
+                font-size: 2em;
+                color: #9e9e9e;
+                margin: 0;
+            }
+
+            h3 {
+                margin: 0;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
