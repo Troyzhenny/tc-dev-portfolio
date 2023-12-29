@@ -3,6 +3,7 @@
 @import "./globals";
 @import "./navbar";
 @import "./buttons";
+@import "./about";
 
 // Main container styling
 main {
@@ -48,6 +49,7 @@ main {
         margin: 50px 0 0 0;
     }
 }
+
 
 // Responsive styling for screens with a maximum width of 583px
 @media (max-width: 583px) {

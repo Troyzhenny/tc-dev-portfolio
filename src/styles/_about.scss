@@ -1,0 +1,55 @@
+.about--me {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid blue;
+
+    .bio--cont {
+        display: flex;
+    }
+
+    h2 {
+        font-family: $headingFont;
+        font-size: 6em;
+        font-weight: 500;
+        color: $secondaryCol;
+        margin: 0; // Remove default margin for h2
+    }
+
+    .bio--img--cont {
+        display: flex;
+        width: 50%; // Adjust width as needed
+
+        img {
+            width: 100%; // Make the image fill the container
+            border-radius: 10px;
+        }
+    }
+
+    .bio--text--cont {
+        display: flex;
+        flex-direction: column;
+        width: 50%; // Adjust width as needed
+
+        // Add some spacing between h2 and the text
+        margin-left: 20px; // Adjust margin as needed
+
+        // Debugger
+        border: 1px solid $secondaryCol;
+    }
+
+    @media (max-width: 768px) {
+        .bio--img--cont,
+        .bio--text--cont {
+            width: 100%; // Stack on smaller screens
+        }
+
+        .bio--img--cont {
+            order: -1; // Move the image above the text
+        }
+    }
+}
