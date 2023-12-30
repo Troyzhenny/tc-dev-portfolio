@@ -167,6 +167,7 @@ main {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  gap: 80px;
 }
 main .hero-txt-cont {
   width: 100%;
@@ -187,6 +188,11 @@ main .hero-txt-cont h4 {
   text-align: justify;
   padding: 20px;
   margin: 0;
+}
+main .svg--cont h4 {
+  font-size: 0.95em;
+  font-weight: 500;
+  margin: 0.75rem;
 }
 main button {
   width: 140px;
