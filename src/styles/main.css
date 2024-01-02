@@ -159,6 +159,55 @@ footer .copyright--cont div:hover {
   cursor: pointer;
 }
 
+.contact--cont {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1019607843);
+}
+.contact--cont .form-group {
+  margin-bottom: 20px;
+}
+.contact--cont label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.contact--cont input,
+.contact--cont textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.contact--cont button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact--cont .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.contact--cont .social-link {
+  margin: 0 10px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
 main {
   width: 100%;
   min-height: 100%;
