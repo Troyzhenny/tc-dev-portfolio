@@ -9,6 +9,9 @@
     align-items: center;
     text-align: center;
 
+    // Styling for color transition
+    background-color: white;
+    transition: background-color 1s ease-in-out; /* Added transition property */
 
     .bio--cont {
         display: flex;

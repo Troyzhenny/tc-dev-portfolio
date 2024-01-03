@@ -1,3 +1,4 @@
+@import "./mixins";
 //Navbar .scss settings file
 
 header {
@@ -13,7 +14,8 @@ header {
     top: 0;
 
     .logo-div {
-        padding: 12px  0 12px 0;
+        padding: 12px 0 12px 0;
+
         & .logo {
             width: 80px;
         }
@@ -27,9 +29,11 @@ header {
     li {
         font-family: $bodyFont;
         font-weight: 500;
-        font-size: 1em;
+        font-size: 1.1em;
+        color: $primaryCol;
         &:hover {
-            text-decoration: underline;
+            transition: 0.5s ease-in-out;
+            color: $secondaryCol;
         }
     }
 
@@ -42,8 +46,7 @@ header {
 
 //Use case: for hamburger menu or adding a button to header for small screens
 // @media (max-width: 768px) {
-//     nav {
+//     nav li {
 //         display: none;
 //     }
-
 // }

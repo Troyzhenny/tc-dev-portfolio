@@ -30,8 +30,7 @@
         color: $primaryCol;
     }
 
-    input,
-    textarea {
+    input, textarea {
         width: 100%;
         padding: 10px;
         border-top: 0;
@@ -39,6 +38,7 @@
         border-right: 0;
         border-bottom: 1.5px solid $secondaryCol;
         outline: transparent;
+        font-family: $bodyFont;
     }
 
     button {

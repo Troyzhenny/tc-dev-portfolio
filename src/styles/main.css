@@ -39,10 +39,12 @@ header ul {
 header li {
   font-family: "Cabinet Grotesk", sans-serif;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.1em;
+  color: #151616;
 }
 header li:hover {
-  text-decoration: underline;
+  transition: 0.5s ease-in-out;
+  color: #606c38;
 }
 header a {
   list-style: none;
@@ -58,6 +60,8 @@ header a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: white;
+  transition: background-color 1s ease-in-out; /* Added transition property */
 }
 .about--me .bio--cont {
   display: flex;
@@ -192,8 +196,7 @@ footer .copyright--cont div:hover {
   font-weight: 600;
   color: #151616;
 }
-.contact--cont input,
-.contact--cont textarea {
+.contact--cont input, .contact--cont textarea {
   width: 100%;
   padding: 10px;
   border-top: 0;
@@ -201,6 +204,7 @@ footer .copyright--cont div:hover {
   border-right: 0;
   border-bottom: 1.5px solid #606c38;
   outline: transparent;
+  font-family: "Cabinet Grotesk", sans-serif;
 }
 .contact--cont button {
   width: 140px;
