@@ -47,7 +47,6 @@
             </h4>
         </div>
         <div class="svg--cont">
-            <!-- <button>Projects</button> -->
             <h4>Scroll Down</h4>
             <svg width="100" height="100" viewBox="0 -6 50 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                 style="width: 70px; height: 70px;">
@@ -93,8 +92,15 @@
             <div class="bio--text--cont">
                 <h3>Who am i?</h3>
                 <h4>
-                    I am a passionate web developer, and graphic designer based in North Carolina.
-                    I specialize in creating minimalistic, beautiful, and responsive web solutions.
+
+                    I am an enthusiastic web developer and graphic designer located in North Carolina.
+                    With a passion for my craft, I excel in crafting sleek, minimalist, and responsive
+                    web solutions that not only meet but exceed client expectations.
+
+                    I am eager to embark on a journey where I can not only
+                    showcase my skills but also continually enhance them. 
+                    I am committed to evolving into an even more proficient and versatile version
+                    of myself.
                     <br><br>
                     When I'm not coding or designing, I enjoy hanging out with friends, the beach, and
                     creating videos about design and web development on my <a href="max-width: 768px"
@@ -104,38 +110,47 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Contact -- Page 3 -->
     <section class="contact--cont">
         <h2>LET'S CHAT</h2>
         <form>
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" style="font-size: 1em;">
+                <input type="text" id="name" name="name" style="font-size: 1em;" required>
             </div>
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" style="font-size: 1em;">
+                <input type="email" id="email" name="email" style="font-size: 1em;" required>
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="2" style="font-size: 1em;"></textarea>
+                <textarea id="message" name="message" rows="2" style="font-size: 1em;" required></textarea>
             </div>
             <button type="submit">Submit</button>
         </form>
 
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/tevin-campbell?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link" target="_blank">
+        <div class="social-links-cont">
+            <a href="https://www.linkedin.com/in/tevin-campbell?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                class="social-link" target="_blank" id="linkedin-icon">
                 <!-- LinkedIn icon -->
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/Troyzhenny" class="social-link" target="_blank">
+            <a href="https://github.com/Troyzhenny" class="social-link" target="_blank" id="github-icon">
                 <!-- GitHub icon -->
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://youtube.com/@Troyzhen?si=BLpLFJiKb3nxRy70" class="social-link" target="_blank">
+            <a href="https://youtube.com/@Troyzhen?si=BLpLFJiKb3nxRy70" class="social-link" target="_blank" id="youtube-icon">
                 <!-- YouTube icon -->
                 <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="mailto:tevincampbell73@yahoo.com" class="social-link" target="_blank" id="mail-icon">
+                <!-- Email icon -->
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://discord.gg/gUcrPApW9f" class="social-link" target="_blank" id="discord-icon">
+                <!-- Discord icon -->
+                <i class="fa-brands fa-discord"></i>
             </a>
         </div>
     </section>
@@ -158,5 +173,7 @@
 
     <!-- Linked Script file -->
     <script src="./src/scripts/index.js"></script>
+    <script src="./src/scripts/contact.js"></script>
 </body>
+
 </html>
