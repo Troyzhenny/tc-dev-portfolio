@@ -28,19 +28,19 @@ header {
 
     li {
         font-family: $bodyFont;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 1.1em;
+        color: $primaryCol;
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
         color: $primaryCol;
         &:hover {
             transition: 0.5s ease-in-out;
             color: $secondaryCol;
         }
-    }
-
-    a {
-        list-style: none;
-        text-decoration: none;
-        color: $primaryCol;
     }
 }
 
