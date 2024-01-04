@@ -30,7 +30,8 @@
         color: $primaryCol;
     }
 
-    input, textarea {
+    input,
+    textarea {
         width: 100%;
         padding: 10px;
         border-top: 0;
@@ -45,11 +46,16 @@
         @include primaryButton;
     }
 
-    .social-links {
+    .social-links-cont {
         display: flex;
         justify-content: center;
         margin-top: 20px;
+
+        #discord-icon, #mail-icon, #youtube-icon, #github-icon, #linkedin-icon{
+            @include tooltipStyle;
+        }
     }
+
 
     .social-link {
         margin: 50px 10px 0;
@@ -58,19 +64,21 @@
         font-size: 24px;
     }
 
+
     //   Media Queries
     @media (max-width: 768px) {
-    
+
         section .contact--cont {
             width: 100%;
             max-width: 440px;
         }
-    
+
         section .contact--cont {
             flex-wrap: wrap;
         }
-    
-        section .contact--cont, h2 {
+
+        section .contact--cont,
+        h2 {
             font-size: 4em;
         }
     }

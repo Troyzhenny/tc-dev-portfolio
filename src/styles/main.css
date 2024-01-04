@@ -196,7 +196,8 @@ footer .copyright--cont div:hover {
   font-weight: 600;
   color: #151616;
 }
-.contact--cont input, .contact--cont textarea {
+.contact--cont input,
+.contact--cont textarea {
   width: 100%;
   padding: 10px;
   border-top: 0;
@@ -224,10 +225,33 @@ footer .copyright--cont div:hover {
   transition: 0.5s;
   color: #fff;
 }
-.contact--cont .social-links {
+.contact--cont .social-links-cont {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+.contact--cont .social-links-cont #discord-icon, .contact--cont .social-links-cont #mail-icon, .contact--cont .social-links-cont #youtube-icon, .contact--cont .social-links-cont #github-icon, .contact--cont .social-links-cont #linkedin-icon {
+  position: relative;
+  display: inline-block;
+}
+.contact--cont .social-links-cont #discord-icon:hover .tooltip, .contact--cont .social-links-cont #mail-icon:hover .tooltip, .contact--cont .social-links-cont #youtube-icon:hover .tooltip, .contact--cont .social-links-cont #github-icon:hover .tooltip, .contact--cont .social-links-cont #linkedin-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.contact--cont .social-links-cont #discord-icon .tooltip, .contact--cont .social-links-cont #mail-icon .tooltip, .contact--cont .social-links-cont #youtube-icon .tooltip, .contact--cont .social-links-cont #github-icon .tooltip, .contact--cont .social-links-cont #linkedin-icon .tooltip {
+  position: absolute;
+  top: -30px;
+  /* Adjust the distance from the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #151616;
+  color: #ffe1bf;
+  font-size: 0.6em;
+  padding: 3px 8px;
+  border-radius: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 .contact--cont .social-link {
   margin: 50px 10px 0;
@@ -243,7 +267,8 @@ footer .copyright--cont div:hover {
   .contact--cont section .contact--cont {
     flex-wrap: wrap;
   }
-  .contact--cont section .contact--cont, .contact--cont h2 {
+  .contact--cont section .contact--cont,
+  .contact--cont h2 {
     font-size: 4em;
   }
 }
