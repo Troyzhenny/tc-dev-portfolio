@@ -1,11 +1,11 @@
 // Importing partials
 @import "./variables";
 @import "./globals";
+@import "./mixins";
 @import "./navbar";
 @import "./about";
 @import "./footer";
 @import "./contact";
-@import "./mixins";
 
 // Main container styling
 main {
