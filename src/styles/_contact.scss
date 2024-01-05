@@ -81,7 +81,13 @@
 
         section .contact--cont,
         h2 {
-            font-size: 4em;
+            font-size: 3.5em;
+        }
+
+        button {
+            @include primaryButton;
+            width: 120px;
+            min-height: 45px;
         }
     }
 }
