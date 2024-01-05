@@ -2,22 +2,22 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 
     .copyright--cont {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        padding: 0 40px;
+        padding: 0 0px 0;
         flex-wrap: wrap;
+        gap: 20px;
 
 
         //Copyright h3 © 2023 TC
         h3 {
             font-weight: 500;
-
         }
         //Copyright h3 > span © 2023 TC
         h3 > span {
