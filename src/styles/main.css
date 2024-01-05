@@ -208,6 +208,8 @@ footer .copyright--cont div:hover {
   border-bottom: 1.5px solid #606c38;
   outline: transparent;
   font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
 }
 .contact--cont button {
   width: 140px;
